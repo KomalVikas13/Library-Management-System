@@ -58,7 +58,7 @@ const Library = ()=>{
     return(
         <>
             <div class="container mt-5">
-                <h1 class="text-center">Library Records</h1>
+                <h2 class="text-center">Library Records</h2>
             </div>
             <div className="d-flex justify-content-center align-items-center mt-5">
                 <form className="w-50">
@@ -170,9 +170,9 @@ const Library = ()=>{
                 </div>
                 <div>
                     {library.map((element) => (
-                        <>
-                        {
-                            (library.StudentId == null || library.BookId) ? deleteLibrary(library.id) :
+                        // <>
+                        // {
+                        //     (library.StudentId == null || library.BookId) ? deleteLibrary(library.id) :
                         
                         <div
                             key={element.id}
@@ -208,8 +208,8 @@ const Library = ()=>{
                                 </div>
                             </div>
                         </div>
-                        }
-                        </>
+                        // }
+                        // </>
                     ))}
                 </div>
             </div>
