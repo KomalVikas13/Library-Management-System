@@ -15,24 +15,34 @@ const Routes_file = ()=>{
     }
     return(
         <>
+            {/* <div class="container">
+                <h1 class="text-center">Library Management System</h1>
+            </div> */}
+            <div class="shadow p-3 mb-5 bg-body-tertiary rounded">
             <ul className="nav justify-content-center">
-                <li className="nav-item">
+                <li className="nav-item fw-bold fs-4">
+                <button type="button" class="btn btn-outline-info fw-bold fs-4">
                     <a className="nav-link" href="#" name="library" onClick={navig}>
-                    Library Records
+                        Library Record
                     </a>
+                </button>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item fw-bold fs-4">
+                <button type="button" class="btn btn-outline-info fw-bold fs-4">
                     <a className="nav-link" href="#" name="student" onClick={navig}>
-                    Student Records
+                        Student Record
                     </a>
+                </button>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item fw-bold fs-4">
+                <button type="button" class="btn btn-outline-info fw-bold fs-4">
                     <a className="nav-link" href="#" name="book" onClick={navig}>
-                    Books Records
+                        Book Record
                     </a>
+                </button>
                 </li>
             </ul>
-
+            </div>
         </>
     )
 }
